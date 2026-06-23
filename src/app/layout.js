@@ -14,14 +14,14 @@ const outfit = Outfit({
 export async function generateMetadata() {
   try {
     const { data } = await supabase.from('settings').select('shop_name').limit(1);
-    const shopName = data?.[0]?.shop_name || "MahaMaya Mobiles";
+    const shopName = data?.[0]?.shop_name || "COVERS ZONE";
     return {
       title: `${shopName} | Premium Mobile Covers & Accessories`,
       description: `Browse premium mobile covers, tempered glass, chargers, and accessories at ${shopName}. Easy catalog viewing and quick WhatsApp ordering with local delivery.`,
     };
   } catch (error) {
     return {
-      title: "MahaMaya Mobiles | Premium Mobile Covers & Accessories",
+      title: "COVERS ZONE | Premium Mobile Covers & Accessories",
       description: "Browse premium mobile covers, tempered glass, chargers, and accessories. Easy catalog viewing and quick WhatsApp ordering with local delivery.",
     };
   }

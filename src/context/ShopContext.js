@@ -10,7 +10,7 @@ const defaultExtraSettings = {
   announcement_enabled: true,
   header_tagline: 'Premium Mobile Accessories Store',
   footer_description: 'Your one-stop destination for premium mobile accessories. We specialize in durable mobile covers, tempered glass, fast chargers, and top-tier Bluetooth sound accessories.',
-  footer_copyright: `© ${new Date().getFullYear()} MahaMaya Mobiles. All rights reserved.`,
+  footer_copyright: `© ${new Date().getFullYear()} COVERS ZONE. All rights reserved.`,
   ordering_guidelines: 'Add items to your cart, fill in delivery details, and click checkout to send your order directly to us via WhatsApp.',
   hero_title: "Elevate Your Phone's Protection & Style",
   hero_subtitle: "Explore premium covers, military-grade tempered glass, and high-speed charging accessories curated for your devices.",
@@ -70,11 +70,11 @@ const defaultExtraSettings = {
   cta_description: "Can't find your specific phone model or cover style? Connect with us on WhatsApp! Send us a photo or query, and we'll check stock directly.",
   cta_btn_text: 'Chat with Shop Owner',
   cta_enabled: true,
-  cta_whatsapp_text: 'Hello MahaMaya Mobiles, I have a query about a phone accessory.'
+  cta_whatsapp_text: 'Hello COVERS ZONE, I have a query about a phone accessory.'
 };
 
 export const parseSettings = (dbRow) => {
-  const shopName = dbRow?.shop_name || 'MahaMaya Mobiles';
+  const shopName = dbRow?.shop_name || 'COVERS ZONE';
   let extra = {
     ...defaultExtraSettings,
     footer_copyright: `© ${new Date().getFullYear()} ${shopName}. All rights reserved.`,
@@ -82,7 +82,7 @@ export const parseSettings = (dbRow) => {
   };
 
   if (!dbRow) return {
-    shop_name: 'MahaMaya Mobiles',
+    shop_name: 'COVERS ZONE',
     whatsapp_number: '919796628335',
     email: '',
     address: '',

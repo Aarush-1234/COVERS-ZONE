@@ -282,7 +282,7 @@ export default function Header() {
               {settings.logo_url ? (
                 <img
                   src={settings.logo_url}
-                  alt={settings.shop_name || 'MahaMaya Mobiles'}
+                  alt={settings.shop_name || 'COVERS ZONE'}
                   className="logo-img"
                 />
               ) : (
@@ -290,7 +290,7 @@ export default function Header() {
                   <div className="logo-icon">
                     <Smartphone size={20} />
                   </div>
-                  {renderShopName(settings.shop_name || 'MahaMaya Mobiles')}
+                  {renderShopName(settings.shop_name || 'COVERS ZONE')}
                 </>
               )}
             </Link>

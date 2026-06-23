@@ -112,7 +112,7 @@ export default function AdminLayout({ children }) {
               style={{ maxHeight: '38px', maxWidth: '140px', objectFit: 'contain' }}
             />
           ) : (
-            <span>{settings.shop_name || 'MahaMaya Mobiles'}</span>
+            <span>{settings.shop_name || 'COVERS ZONE'}</span>
           )}
           <span style={{
             fontSize: '10px',
@@ -150,7 +150,7 @@ export default function AdminLayout({ children }) {
                 <div className="logo-icon" style={{ padding: '3px' }}>
                   <Layers size={16} />
                 </div>
-                <span>{settings.shop_name || 'MahaMaya Mobiles'}</span>
+                <span>{settings.shop_name || 'COVERS ZONE'}</span>
               </>
             )}
             <span style={{

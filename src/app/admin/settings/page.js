@@ -933,7 +933,7 @@ export default function AdminSettings() {
                 <label className="form-label">Shop Name *</label>
                 <input
                   type="text"
-                  placeholder={shopSettings?.shop_name || "MahaMaya Mobiles"}
+                  placeholder={shopSettings?.shop_name || "COVERS ZONE"}
                   value={formData.shop_name}
                   onChange={(e) => setFormData(prev => ({ ...prev, shop_name: e.target.value }))}
                   required
@@ -1004,7 +1004,7 @@ export default function AdminSettings() {
                 <label className="form-label">Footer Copyright Statement</label>
                 <input
                   type="text"
-                  placeholder={`© ${new Date().getFullYear()} ${shopSettings?.shop_name || "MahaMaya Mobiles"}. All rights reserved.`}
+                  placeholder={`© ${new Date().getFullYear()} ${shopSettings?.shop_name || "COVERS ZONE"}. All rights reserved.`}
                   value={formData.footer_copyright}
                   onChange={(e) => setFormData(prev => ({ ...prev, footer_copyright: e.target.value }))}
                   className="form-input"
@@ -1905,7 +1905,7 @@ export default function AdminSettings() {
                       <label className="form-label">Default WhatsApp Pre-filled Message</label>
                       <input
                         type="text"
-                        placeholder={`e.g. Hello ${shopSettings?.shop_name || "MahaMaya Mobiles"}, I have a query about a phone accessory.`}
+                        placeholder={`e.g. Hello ${shopSettings?.shop_name || "COVERS ZONE"}, I have a query about a phone accessory.`}
                         value={formData.cta_whatsapp_text}
                         onChange={(e) => setFormData(prev => ({ ...prev, cta_whatsapp_text: e.target.value }))}
                         disabled={!formData.cta_enabled}
