@@ -38,8 +38,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={outfit.variable}>
       <head>
-        <link rel="icon" type="image/png" href="/favicon.png?v=3" />
-        <link rel="apple-touch-icon" href="/apple-icon.png?v=3" />
+        <link rel="icon" type="image/png" href="/favicon.png?v=4" />
+        <link rel="apple-touch-icon" href="/apple-icon.png?v=4" />
       </head>
       <body>
         <ShopProvider>
